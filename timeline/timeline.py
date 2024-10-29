@@ -21,7 +21,7 @@ def timeline():
     showGameMenu()
     setUpNewGame()
     play()
-    showWinner
+    showWinner()
 
 def showGameMenu():
     print("Game Menu")
@@ -33,6 +33,6 @@ def play():
     print("Playing")
 
 def showWinner():
-    print("Y`our the Winner")
+    print("Your the Winner")
 
 timeline()
