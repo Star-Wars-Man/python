@@ -18,8 +18,8 @@ print("Hello Timeline")
     # 4 show who winner is
 def timeline():
     print("Starting timeline game")
-    showGameMenu()
-    setUpNewGame()
+    player_score = showGameMenu()
+    setUpNewGame(player_score)
     play()
     showWinner()
 
@@ -28,13 +28,16 @@ def showGameMenu():
     new_player = True
     while new_player:
         player_name = input("Player Name: ")
-        player_score.update(player_name : 0)
+        player_score.update[player_name : 0]
         another = input("Add Player Y or N?: ")
         if another == "N" or "n" or "no" or "No":
             new_player = False
+    return player_score
 
-def setUpNewGame():
+def setUpNewGame(player_score):
     print("New Game")
+    num_of_players = len(player_score)
+    return num_of_players
 
 def play():
     print("Playing")
